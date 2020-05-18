@@ -43,6 +43,8 @@ Thus, the start token becomes the first tuple in the list whereas the end token 
  
  On top of the twelve encoder layers of RoBERTa, I have built a custom QA head using two heads, one giving the start logit and the other the end logit. Each head is a 1D ConvNet with a softmax function.
  
+![Image description](model.png)
+ 
 # Training:
 
 Learning Rate = 3e-5 (As specified in the paper)
