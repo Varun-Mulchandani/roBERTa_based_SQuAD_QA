@@ -51,4 +51,8 @@ Optimizer - Adam
 Batch Size - 4(Due to computational limitations. Not: For optimal results, as specified in the bert paper, batch size must be equal to 32 or 64)
 Epochs = 3/4 (As specified in the paper)
 
+# Results:
+
+Sample context:
+'Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook.'
 
