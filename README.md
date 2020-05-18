@@ -39,7 +39,7 @@ Thus, the start token becomes the first tuple in the list whereas the end token 
  
  1) Input tokens - The input to the RoBERTa model is of the following format for Q and A tasks.
  
- '<s> Question </s></s> Answer </s>' (The Questions and Answers are in the form of token ids)
+ [<s> Question </s></s> Answer </s>] (The Questions and Answers are in the form of token ids)
  
  On top of the twelve encoder layers of RoBERTa, I have built a custom QA head using two heads, one giving the start logit and the other the end logit. Each head is a 1D ConvNet with a softmax function.
  
