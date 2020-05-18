@@ -61,3 +61,10 @@ Sample context:
 ![Image description](squad_2.png)
 
 ![Image description](squad_3.png)
+
+
+# Further Work:
+
+Document Strides
+
+Testing Metrics
