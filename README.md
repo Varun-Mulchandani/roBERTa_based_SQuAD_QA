@@ -17,6 +17,10 @@ Pandas
 
 Sklearn
 
+Flask
+
+HTML/CSS
+
 
 # Stanford Question and Answering Dataset (SQuAD):
 The Data consists of multiple titles, each having multiple contexts/documents, each context having multiple questions and answers. Each answer is provided with the start index. The questions can be seen as queries to each passage and the answers can be seen as a span in each context.
@@ -43,7 +47,6 @@ Thus, the start token becomes the first tuple in the list whereas the end token 
  
  On top of the twelve encoder layers of RoBERTa, I have built a custom QA head using two heads, one giving the start logit and the other the end logit. Each head is a 1D ConvNet with a softmax function.
  
-![Image description](model.png)
  
 # Training:
 
@@ -56,13 +59,12 @@ Epochs = 3/4 (As specified in the paper)
 # Results:
 
 Sample context:
-'Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook.'
+'Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumours, which do not spread. Possible signs and symptoms include a lump, abnormal bleeding, prolonged cough, unexplained weight loss, and a change in bowel movements. While these symptoms may indicate cancer, they can also have other causes. Over 100 types of cancers.'
 
-![Image description](squad_1.png)
+![Image description](s1.png)
 
-![Image description](squad_2.png)
+![Image description](s2.png)
 
-![Image description](squad_3.png)
 
 
 # Further Work:
