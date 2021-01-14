@@ -1,0 +1,94 @@
+body
+{
+  background-color: #282c34;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hero
+{
+  margin-top: 100px;
+}
+
+#para2{
+  color: white;
+}
+
+h2
+{
+  margin-left: 25px;
+  color:white;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  align-self: center;
+  /* margin-top: 100px; */
+
+}
+
+textarea
+{
+  border: 2px solid white;
+  border-radius: 24px;
+  background: transparent;
+  padding: 10px;
+  color: white;
+  transition: 0.25s ease;
+}
+
+textarea:hover,
+textarea:focus
+{
+  border: 2px #3dd1ca solid;
+  outline: none;
+}
+
+.btn-info
+{
+  margin-top:10px;
+  align-self: center;
+  margin-left: 150px;
+  border: 1px solid black;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+  font-size:13px;
+  text-transform: uppercase;
+}
+
+.btn-info:hover
+{
+  background-color: #3dd1ca;
+  color: white;
+}
+
+.results
+{
+  margin-top:100px;
+  color:black;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-left: 500px;
+}
+
+.ml-container
+{
+  align-self: center;
+  margin-left: 150px;
+  font-size: 20px;
+}
+
+h3
+{
+  color:white;
+  font-size: 20px;
+}

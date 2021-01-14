@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QA</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css ">
+</head>
+<body>
+
+	<header>
+		<div class="hero">
+		<h2 id="one">QA</h2>
+		</div>
+	</header>
+	<div class="row">
+		<div class="column">
+
+
+	<div class="ml-container">
+		<p id="para2">Context:</p>
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<textarea id="ta_1" name="message1" rows="10" cols="50">Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. These contrast with benign tumours, which do not spread. Possible signs and symptoms include a lump, abnormal bleeding, prolonged cough, unexplained weight loss, and a change in bowel movements. While these symptoms may indicate cancer, they can also have other causes. Over 100 types of cancers.</textarea>
+		<br/>
+		<p id="para2">Query:</p>
+		<form action="{{ url_for('predict')}}" method="POST">
+		<textarea id="ta_2" name="message2" rows="1" cols="50">What are symptoms</textarea>
+		<br/>
+		<br/>
+	<p>
+
+	</p>
+	</div>
+		<div class="container">
+		<input  type="submit" class="btn-info" value="Predict">
+	</div>
+</div>
+
+
+
+	</form>
+
+	<div class="column">
+		<h3 id=res >Result :{{prediction}}</h3>
+	</div>
+	</div>
+
+</body>
+</html>
